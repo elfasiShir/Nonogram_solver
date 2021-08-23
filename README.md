@@ -1,2 +1,4 @@
 # Nonogram_solver
-3
+solves any nonogram board
+in progress 
+v1.0: just logistics no brute force yet
