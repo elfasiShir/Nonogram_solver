@@ -73,7 +73,7 @@ def remove_from_arr(arr:List[int], cord:int) -> np.ndarray:
         i += 1
 
 
-def sum_zero(mat) -> int:
+def sum_zero(mat:List[List[int]]) -> int:
     """returns the number of zeros left in a nonogram matrix
     -------------
     :mat: nonogram numpy matrix
@@ -87,7 +87,7 @@ def sum_zero(mat) -> int:
                 sum += 1
     return sum
 
-def array_zeros(mat):
+def array_zeros(mat:List[List[int]]) -> List[tuple[int]]:
     """makes an array that describes the location of every zero in the nonogram
     ---------
     :mat: numpy matrix  

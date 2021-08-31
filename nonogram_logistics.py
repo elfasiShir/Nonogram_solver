@@ -47,7 +47,7 @@ def nonogram_logics(mat:List[List[int]], cords:List[List[List[int]]]) -> np.ndar
                 if(mat[:,x][i] == 0):
                     #we can change 1 > 1 and 0 > 1 but we cant change -1 > 1
                     mat[:,x][i] = temp_array[i]
-    for y in range(len(cords[0])):
+    for y in range(len(cords[1])):
         depicted_cord_sum =(sum(cords[1][y]) + (len(cords[1][y]) - 1))
         if((depicted_cord_sum > mat[y,:].size/2) and (depicted_cord_sum != mat[y,:].size)):
             temp_array = np.zeros(mat[y,:].shape,dtype=int)
