@@ -88,16 +88,26 @@ def generate_nonogram_solution(mat:List[List[int]], cords:List[List[List[int]]])
                 sum_mat_ones += 1 
     needed_ones_sum = sum_cords(cords) - sum_mat_ones
     size = sum_zero(mat)
-    for iteration in itertools.product(np.array([1,0], dtype=bool), repeat = size):
+
+    #we should initialize the iter depending on how much we need untill we reach goal
+    #for (1,1,1,1,1,1,1,1) and needed 6 ones, we should initialize [1,0] instead of [0,1]
+    if(needed_ones_sum >= size / 2):
+        generate_solution = itertools.product(np.array([1,0], dtype=bool), repeat = size)
+    else:
+        generate_solution = itertools.product(np.array([0,1], dtype=bool), repeat = size)
+
+    for iteration in generate_solution:
         if(sum(iteration) == needed_ones_sum):
             for i in range(size):
                 if(iteration[i]):
                     mat[lst_zeros[i][0],lst_zeros[i][1]] = 1
             if(is_solved(mat, cords)):
                 nonogram_finalize(mat, cords)
-                return
+                return "Solved!"
             for node in lst_zeros:
                 mat[node] = 0
+                
+    return "Cannot be solved, but i tried my best"
 
 def main():
     #cords = [[[1],[1,2],[1]] , [[1],[1,1],[1],[1]]]
