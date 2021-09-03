@@ -1,6 +1,6 @@
 from django.shortcuts import render
 import numpy as np
-import sys
+
 from nonogram.nonogram_main import *
 from nonogram.nonogram_logistics import *
 from nonogram.nonogram_tools import *
