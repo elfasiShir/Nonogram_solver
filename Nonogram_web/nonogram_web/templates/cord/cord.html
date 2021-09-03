@@ -1,0 +1,34 @@
+<html>
+    <head>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'design.css' %}">
+    </head>
+    <body>
+        <h1>Nonogram Solver</h1>
+        <form action="/generate" method="GET">
+            {% if not error %}
+                <button name="generate" class="css-button-fully-rounded--green">Solve!</button>
+            {% endif %}
+        <table class="center">       
+        {% for i in range_x %}
+            <tr>     
+                {% for j in range_y %}
+                    <td id="unsolved_node">
+                    {% if i is 0 and not j == i %}
+                        <input type="text" name="mat_{{i}}_{{j}}" id="mat_inputs">
+                    {% endif %}
+                    {% if j is 0 and not i == j %}
+                        <input type="text" name="mat_{{i}}_{{j}}" id="mat_inputs">
+                    {% endif %}
+                    </td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table> 
+    {% if error %}
+        <div>{{error}}</div>
+        <div>press back</div>
+    {% endif %}
+    </form>
+</body>
+</html>

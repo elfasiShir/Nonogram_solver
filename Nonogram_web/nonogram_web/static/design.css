@@ -1,0 +1,69 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #E3FDFD; 
+    /* #fbf2e2; */
+    color: #8291b3;
+    font-size:x-large;
+}
+#dim_input {
+    background-color:rgb(255, 245, 233);
+    width: 250px;
+    height: 35px;
+    border:none;
+    border-bottom: 3px solid #716F81;
+    text-size-adjust: auto;
+}
+h1 {
+    color: #716F81;
+}
+table{
+    border:10px #A6E3E9 ;
+}
+table.center {
+    margin-left: auto; 
+    margin-right: auto;
+}
+td{
+    border-radius: 10px 10px 10px 10px ;
+    color: #8291b3;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+#solved_node {
+    background-color: #96BAFF;
+}
+#unsolved_node {
+    background-color: #d4f8f3;
+}
+#mat_inputs{
+    background-color:rgb(255, 251, 243);
+    width: 150px;
+    height: 100px;
+    border:lightgoldenrodyellow;
+    border: 3px solid #b9b5d3;
+    text-align: center;
+}
+.css-button-fully-rounded--green {
+    min-width: 130px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #8291b3;
+    background: #8291b3;
+  }
+  .css-button-fully-rounded--green:hover {
+    background:#e1fcff;
+    color: #716F81 
+  }
+  .button:hover {opacity: 1}
+/* td:hover{background-color: #9E7777 ;} */

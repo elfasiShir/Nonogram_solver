@@ -1,0 +1,25 @@
+<html>
+    <head>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'design.css' %}">
+    </head>
+    <body>
+        <h1>Nonogram Solver</h1>
+        {{ final_msg }}
+        <div></div>
+        {{ cords }}
+        <table class="center">
+        {% for row in mat %}
+            <tr>
+                {% for node in row %}
+                    {% if node == 1 %}
+                        <td id="solved_node">{{ node }}</td>
+                    {% else %}
+                        <td id="unsolved_node">{{ node }}</td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+    </body>
+</html>

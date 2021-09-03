@@ -1,0 +1,16 @@
+<html>
+    <header >
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'design.css' %}">
+    </header>
+    <body>
+        <h1>Nonogram Solver</h1><br>
+        <div>Enter dimentions:</div>
+        <form action="/cord" method="GET">
+            <input type="text" name="dim" id="dim_input" placeholder="ex: 4,5">
+        </form>
+        {% if error %}
+        <div>{{error}}</div>
+        {% endif %}
+    </body>
+</html>
