@@ -25,7 +25,7 @@ SECRET_KEY = 'dfkjsdflsdkhrfrtgmenj4564jl43n5jnrajxzdflkgjhrtgfd'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [ "bearwulf.pythonanywhere.com" ]
+ALLOWED_HOSTS = [ "bearwulf.pythonanywhere.com", "127.0.0.1" ]
 
 
 # Application definition
@@ -118,6 +118,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / "nonogram_web" / "static",
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
