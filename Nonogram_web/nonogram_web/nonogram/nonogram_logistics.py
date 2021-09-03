@@ -1,6 +1,6 @@
 from typing import List, Sized
 import numpy as np
-from nonogram_tools import *
+from .nonogram_tools import *
 
 def nonogram_logics(mat:List[List[int]], cords:List[List[List[int]]]) -> np.ndarray:
     """solves the nonogram via normal logistics (human capable)

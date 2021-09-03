@@ -2,8 +2,8 @@ from typing import List, Sized
 import numpy as np
 import itertools
 from numpy.lib import tracemalloc_domain
-from nonogram_logistics import nonogram_finalize, nonogram_logics
-from nonogram_tools import *
+from .nonogram_logistics import nonogram_finalize, nonogram_logics
+from .nonogram_tools import *
 
 error_depot = {
     "CORD_SUM_IS_NOT_SAME" : "cord dimentions need to depict the same amount of nodes",

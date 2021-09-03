@@ -1,9 +1,9 @@
 from django.shortcuts import render
 import numpy as np
 
-from nonogram.nonogram_main import *
-from nonogram.nonogram_logistics import *
-from nonogram.nonogram_tools import *
+from .nonogram.nonogram_main import *
+from .nonogram.nonogram_logistics import *
+from .nonogram.nonogram_tools import *
 ERROR_DEPOT = {
     "NO_KAMA" : "dimentions should be seperated by kama",
     "MAX_DIM" : "there must be maximum two dimentions in a nonogram matrix",
