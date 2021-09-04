@@ -8,7 +8,7 @@
 .ex: "3,2", "10,10"
 - Usually dimentions above 10 will take a long time to load 
 -----
-### node modes:
+## node modes:
 -  1 : True "marked in" node 
 - -1 : False, "marked out" node, as in, cannot be marked 1
 -  0 : "unmarked" node can be 1 or -1
