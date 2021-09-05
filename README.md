@@ -12,9 +12,16 @@
 - -1 : False, "marked out" node, as in, cannot be marked 1
 -  0 : "unmarked" node can be 1 or -1
 # Code
-`Nonogram_solver/Nonogram_web/nonogram_web/nonogram/ `
+> Nonogram_solver/Nonogram_web/nonogram_web/nonogram/
+
 <br/>The main process of solving a nonogram is as follows:
 - Validate the cordinates
 - Create the matrix
 - Apply logical functions to mark the nodes 
 - use brute force for the remaining unmarked nodes.
+## How to run 
+from
+> Nonogram_solver/Nonogram_web
+
+type <br/>
+```python manage.py runserver```
