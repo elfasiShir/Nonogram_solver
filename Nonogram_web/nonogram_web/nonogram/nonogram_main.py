@@ -80,6 +80,8 @@ def generate_nonogram_solution(mat:List[List[int]], cords:List[List[List[int]]])
     :mat: numpy int matrix
     :cords: list of nonogram cordinations
     """
+    if(is_solved(mat, cords)):
+        return "Solved!"
     lst_zeros = array_zeros(mat)
     sum_mat_ones = 0 
     for row in mat:
@@ -111,7 +113,8 @@ def generate_nonogram_solution(mat:List[List[int]], cords:List[List[List[int]]])
 
 def main():
     #cords = [[[1],[1,2],[1]] , [[1],[1,1],[1],[1]]]
-    cords = [[[10], [1], [7], [1,7], [1,1], [1,1], [1,1,2], [1,2], [1,1], [1,1]],[[7,2], [1,1], [1,8], [1,2], [1,2], [1,2,2], [1,2,2], [1,1],[1,1],[1]]]
+    #cords = [[[10], [1], [7], [1,7], [1,1], [1,1], [1,1,2], [1,2], [1,1], [1,1]],[[7,2], [1,1], [1,8], [1,2], [1,2], [1,2,2], [1,2,2], [1,1],[1,1],[1]]]
+    cords = [[[2, 2], [1, 3], [3, 1], [1, 3], [2, 2]], [[5], [1, 1, 1], [3], [2, 2], [5]]]
     print(is_valid_nonogram(cords))
     empty_mat = create_nonogram_np(cords)
     nonogram_logics(empty_mat, cords)
