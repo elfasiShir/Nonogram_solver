@@ -2,7 +2,7 @@
 # Website
 
 [bearwulf.pythonanywhere.com](http://bearwulf.pythonanywhere.com)
-
+not available at the moment
 ## How to use
 - Dimention and cordinates should be depicted as ints seperated by kama
 .ex: "3,2", "10,10"
