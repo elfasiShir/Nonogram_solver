@@ -3,9 +3,9 @@
 
 [bearwulf.pythonanywhere.com](http://bearwulf.pythonanywhere.com)
 ## How to use
-- Dimention and cordinates should be depicted as ints seperated by kama
+- dimension and cordinates should be depicted as ints seperated by kama
 .ex: "3,2", "10,10"
-- Usually dimentions above 10 will take a long time to load 
+- Usually dimensions above 10 will take a long time to load 
 ## Node modes:
 -  1 : True "marked in" node 
 - -1 : False, "marked out" node, as in, cannot be marked 1
